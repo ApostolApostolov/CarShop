@@ -10,17 +10,22 @@ body{
     background-repeat: no-repeat;
     background-position-x: 60%;
     background-size: cover;
+    background-attachment: fixed;
 }
-@media (max-width: 50%){
-    body{
-        background-size: cover;
-    }
-}
-.header{
-    width: 79%;
-    margin: auto;
-}
-
+/* background-color: rgb(81, 196, 211);
+    min-width: 900px;
+    height: 100%;
+    object-fit: cover;
+    background-image: url(/static/images/img.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 60%;
+    background-size: cover;
+    overflow-x: scroll;
+    /* position: absolute; */
+    top: 0px;
+    bottom: 0px;
+    background-attachment: fixed;
+} */
 .nav-item{
     transition: 0.5s;
     opacity: 0.9;
@@ -35,7 +40,10 @@ body{
 .navbar{
     padding: 0.1rem 1rem;
 }
-
+.header{
+    width: 79%;
+    margin: auto;
+}
 .container{
     padding-left: 0px;
     padding-right: 0px;
@@ -52,7 +60,9 @@ body{
 .row{
     margin-top: 20px;
     margin-right: 5px;
-    background-color: #c0d4da;  
+    background-color: #c0d4da; 
+    background-color:rgb(81, 196, 211); 
+    
 }
 .focus-borders:hover{
     border: solid  1px blue;
@@ -63,29 +73,53 @@ body{
     border-radius: 1rem;
     
 }
-.colum-item{
-    height: 20%;
-    margin-right: 20px;
-    padding: 20px;
-  
-}
  img{
      display: block;
-     max-width: 90%;
+     max-width: 98%;
      max-height: 10%;
      width: auto;
      height: auto;
      margin-top: 5px;
+     padding-left: 5px;
+     padding-top: 5px;
+     border-radius: 1rem;
+ }
+ h4{
+     padding-left: 8px;
  }
  p{
-     font-size: 12px;
+     font-size: 15px;
+     margin-bottom: 0;
+     padding-left: 8px;
  }
  .price{
      position: absolute;
-     bottom: 80px;
-     right: 50px;
+     bottom: 70px;
+     right: 20px;
     background-color: white;
     font-size: 20px;
     border: solid 2px rgb(81, 196, 211);
     border-radius: 12px;
+ }
+ .test{
+     background-color: rgb(81, 196, 211);
+ }
+ .test2{
+     background-color: white;
+     border-radius: 1rem;
+ }
+ 
+ @media screen and (max-width: 580px ){
+     .col-sm{
+         margin-bottom: 20px;
+     }
+ }
+ @media screen and (max-width: 992px){
+        .price{
+                bottom: 5.8rem;
+                font-size: 16px;
+        }
+        h4{
+            font-size: 1.2rem;
+        }
  }
