@@ -4,6 +4,14 @@
     <base href="/">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="static/styles/style.css">
+
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous"
+></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,182 +22,331 @@
 
 {% include "partials/navbar.html" %}
 
+<p class=" p-left">
+  <button class="btn" type="button" data-toggle="collapse" data-target="#search-bar" aria-expanded="false" aria-controls="search-bar">
+    <a href="javascript:void(0);" class="icon">
+      <i class="fa fa-bars"></i>
+    </a>
+  </button>
+</p>
+<div class="collapse show search shadow" id="search-bar">
+  <div class="card card-body ">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+    <form action="" method="POST">
 
+      <label for="cars">Brand:</label>
+      <select name="cars" id="cars" >
+        <option value="all">All</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
+      <label for="year">Year</label>
+        <select name="year" id="year">
+          <option value="all">All</option>
+          <option value="2000s">2000s</option>
+          <option value="2010s">2010s</option>
+          <option value="2020s">2020s</option>
+        </select>
+     
 
-    </div>
-    <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
-      
-    </div>
-    <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
-    </div>
+      <label for="engine">Engine</label>
+      <select name="engine" id="engine">
+        <option value="all">All</option>
+        <option value="all">Diesel</option>
+        <option value="all">Hybrid</option>
+        <option value="all">Electric</option>
+        <option value="all">Petrol</option>
+      </select>
+
+      <label for="price1">Max price</label>
+      <input type="text">
+
+      <label for="New">New</label>
+      <input class="checkbox" type="checkbox">
+
+      <label for="Used">Used</label>
+      <input class="checkbox" type="checkbox">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    
+    
   </div>
 </div>
 
-<div class='container'>
-  <div class="row">
-    <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
+<div>
+  <form action="" method="POST">
+    <p>
+      {{search.model}}
 
-    </div>
-    <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
-      
-    </div>
-    <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
-    </div>
-
-
+      {{search.submit}}
+    </p>
+  </form>
 </div>
 
+<p>
+</p>
 
-<div class='container'>
+
+<div class="container" id="list-offers" >
+  <div  id="first-row" class="row">
+    <div class="col-sm colum-item  ">
+      <a href="#">
+        <div class="offer-on-col ">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm colum-item ">
+      <a href="#">
+        <div class="offer-on-col ">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm colum-item ">
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
   <div class="row">
     <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
-
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
     </div>
+
     <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
-      
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
     </div>
+
     <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
     </div>
 
+  </div>
 
-</div>
-<div class='container'>
+  <div class="row">
+
+    <div class="col-sm colum-item ">
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm colum-item ">
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm colum-item ">
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
   <div class="row">
     <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
-
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
     </div>
+
     <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
-      
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
     </div>
+
     <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
     </div>
+  </div>
 
-
-</div>
-<div class='container'>
   <div class="row">
     <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
-
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
     </div>
+
     <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
-      </div>
-      
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
     </div>
+
     <div class="col-sm colum-item ">
-      <div class="test2">
-        <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
-        <h4>Mustang</h3>
-          <p class="price">$2000,99</p>
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm colum-item ">
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm colum-item ">
+      <a href="#">
+        <div class="offer-on-col">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>Mustang</h4>
+            <p class="price">$2000,98</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm colum-item ">
+      <a href="#">
+        <div class="offer-on-col">
+         <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+         <h4>Mustang</h4>
+          <p class="price">$999,98</p>
           <hr>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia.</p>
       </div>
+        </a>
+     </div>
+ 
+  </div>
+
+  <!-- {{url_for('static', filename='script/scripts.js')}} -->
+  <div class="row">
+    {% for item in cars %}
+    <div class="col-sm-4 colum-item  ">
+      <a href={{ url_for('show_order', order_id= item.id ) }}>
+        <div class="offer-on-col ">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="car">
+          <h4>{{item.name}}</h4>
+            <p class="price">${{item.price}}</p>
+            <hr>
+            <p>{{item.description}}</p>
+        </div>
+      </a>
     </div>
+    {%endfor%}
+    
+
+    
+  </div>
 
 
-</div>
 
-
-</body>>
+</body>
 
 {% include "partials/footer.html" %}
